@@ -1,0 +1,46 @@
+
+.BlocTexteExplore {
+    display: flex;
+    width: 94%;
+    margin: auto;
+    height: 250px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: $colorblancgris;
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @media screen and (min-width: $tablet) {
+        width: 38%;
+        margin-top: 34px;
+        border-radius: 30px;
+        padding: 11px;
+        
+    }
+
+    p{
+        margin-top: 0px;
+        color: $colorGrisTexte;
+    }
+    h1{
+        margin-top: -10px;
+    }
+    a {
+        @include button;
+        margin-top: 5px;
+        margin-bottom: 0px;
+
+        &:hover{
+            filter: brightness(110%);
+            box-shadow: 0px 1px 3px 3px #a39b9b;  
+
+        }
+       
+    }
+
+    
+
+}
+    
